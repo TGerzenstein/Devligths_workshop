@@ -12,96 +12,34 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <div class="container">
-      <header>
-        <div class="box-container">
-            <div class="box1">
-                <h1>Lista de Tareas</h1>
-                <p class="subtitle">Bootcamp by Devlights</p>
-            </div>
+        <div class="head">
+            <h1>List task</h1>
         </div>
-    </header>
-    <main>
-<!--         <section>
-            <article>
-                <h2 class="title-secondary">HTML</h2>
-                <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. 
-                  Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para 
-                  describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+        <form id="form-create">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Example label</label>
+              <input type="text" class="form-control" id="create" placeholder="Task...">
+              <button type="submit" class="btn btn-primary mb-2 mt-2">Create task</button>            
+            </div>
+        </form>
 
-                  "Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o 
-                  entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo 
-                  a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).</p>
-
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2 class="title-secondary">CSS</h2>
-                <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la 
-                  presentación de documentos HTML o XML (incluyendo varios lenguajes basados en XML como SVG, MathML o XHTML). CSS describe cómo
-                   debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
-
-                  CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. Anteriormente  
-                  el desarrollo de varias partes de las especificaciones de CSS era realizado de manera sincrónica, lo que permitía el versionado 
-                  de las recomendaciones. Probablemente habrás escuchado acerca de CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado
-                   como una versión oficial.</p>
-
-
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2 class="title-secondary">Javascript</h2>
-                <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir 
-                  la presentación de documentos HTML o XML (incluyendo varios lenguajes basados en XML como SVG, MathML o XHTML). CSS describe 
-                  cómo debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
-
-                  CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. Anteriormente , 
-                  el desarrollo de varias partes de las especificaciones de CSS era realizado de manera sincrónica, lo que permitía el
-                   versionado de las recomendaciones. Probablemente habrás escuchado acerca de CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca 
-                   se ha lanzado como una versión oficial.</p>
-            </article>
-        </section>
-        <section> -->
-          <div class="container-last">
-                <div class="container-form">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="container-form">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="container-form">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
-          </div>
-        </section>
-    </main>
     </div>
-    <footer>
-      <p>Created by Tatiana Gerzenstein 2024 © </p>
-    </footer>
+    <section class="container">
+        <form class="mt-4">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Example label</label>
+              <input type="text" class="form-control" id="search" placeholder="Search...">
+              <button type="submit" class="btn btn-primary mb-2 mt-2">Create task</button>            
+            </div>
+        </form>
+        <ul id="task-list" class="list-group">
+            <li><strong>Sleep</strong><button type="submit" class="btn btn-primary mb-2 mt-2 delete">Delete</button></li>
+            <li><strong>Sleep</strong><button type="submit" class="btn btn-primary mb-2 mt-2 delete">Delete</button></li>
+        </ul>
+    </section>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
