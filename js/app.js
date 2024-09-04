@@ -1,16 +1,37 @@
 
-window.addEventListener('load', () => {
-    const formCreate = document.getElementById('form-create');
-    const taskList = document.getElementById('task-list');
-    const inputCreate = document.getElementById('create');
-    const inputSearch = document.getElementById('search');
+//Datetime
+const dateTime = document.getElementById('date');
+const date = new Date();
+dateTime.innerHTML = date.toLocaleTimeString('es-AR', {weekday:'long', month:'short', day:'numeric'});
 
-    formCreate.addEventListener('submit', (e) => {
-        e.preventDefault();
-        getValue();
-    });
+//Tasks
+const input = document.querySelector('.input-btn input');
+const listTasks = document.querySelector('.list-group ul');
+const message = document.querySelector('.list-group');
 
-    const getValue = () => {
-        console.log(inputCreate.value);
+
+let tasks = [];
+
+
+
+function addTasks(){
+    const task = input.value;
+    if (task === '') {
+        showError('Please, complete this field.')
     };
-});
+}
+
+
+function showError(error){
+    const messageError = document.createElement('p');
+    messageError.textContent = error;
+    messageError.classList.add('error-message');
+
+    message.appendChild(messageError);
+    console.log(error);
+
+    setTimeout(
+        ()=> {
+            messageError.remove();
+        },1800);
+}
