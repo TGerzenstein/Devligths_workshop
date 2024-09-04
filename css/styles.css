@@ -24,7 +24,7 @@ body {
 }
 
 .section-todo {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 12px;
     margin-top: 10px;
@@ -47,7 +47,7 @@ h1 {
 }
 
 input {
-    border: 1px solid rgb(209,213,219);
+    border: 1px solid #D1D5DB;
     border-radius: 8px;
     padding: 12px 16px;
 }
@@ -56,10 +56,11 @@ input {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    border: 1px solid rgb(196, 178, 238);
+
+    border: 1px solid #C4B2EE;
     border-radius: 8px;
-    background-color: rgb(196, 178, 238);
-    color: rgb(255, 255, 255);
+    background-color: #C4B2EE;
+    color: #FFFFFF;
     list-style: none;
     margin: 5px 0px;
     width: 400px;
@@ -100,7 +101,7 @@ span:hover {
 
 button {
   background-color: #FFFFFF;
-  border: 1px solid rgb(209,213,219);
+  border: 1px solid #D1D5DB;
   border-radius: 8px;
   color: #111827;
   font-weight: 600;
@@ -119,7 +120,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(249,250,251);
+  background-color: #F9FAFB;
 }
 
 button:focus {
@@ -133,7 +134,7 @@ button:focus-visible {
 
 
 @media (max-width: 600px) {
-    
+
     .container {
         margin-top: 20px;
         width: 100%;
