@@ -6,40 +6,32 @@
     <meta name="description" content="Practicing with HTML, CSS, and JavaScript by building a To-Do List app.">
     <title>Devlights Workshop | HTML CSS Javascript</title>
   
-
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Link My CSS --> 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="head">
-            <h1>List task</h1>
-        </div>
-        <form id="form-create">
-            <div class="form-group">
-              <label for="formGroupExampleInput">Example label</label>
-              <input type="text" class="form-control" id="create" placeholder="Task...">
-              <button type="submit" class="btn btn-primary mb-2 mt-2">Create task</button>            
-            </div>
-        </form>
-
-    </div>
     <section class="container">
-        <form class="mt-4">
-            <div class="form-group">
-              <label for="formGroupExampleInput">Example label</label>
-              <input type="text" class="form-control" id="search" placeholder="Search...">
-              <button type="submit" class="btn btn-primary mb-2 mt-2">Create task</button>            
-            </div>
-        </form>
-        <ul id="task-list" class="list-group">
-            <li><strong>Sleep</strong><button type="submit" class="btn btn-primary mb-2 mt-2 delete">Delete</button></li>
-            <li><strong>Sleep</strong><button type="submit" class="btn btn-primary mb-2 mt-2 delete">Delete</button></li>
-        </ul>
+        <div class="section-todo">
+          <div class="head">
+            <h1>List task</h1>
+            <p id="date"></p>
+          </div>
+          <div class="input-btn">
+            <input type="text" placeholder="Task...">
+            <button class="btn" onclick="addTasks()">Create task</button>            
+          </div>
+        </div>  
+        <div class="list-group">
+          <ul>
+            <li>
+              <strong>Clean</strong>
+              <span task-id="1">X</span>
+            </li>
+          </ul>
+        </div>
+        <button class="btn" onclick="removeAll()">Remove all</button>            
+
     </section>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>
